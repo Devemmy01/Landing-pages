@@ -1,0 +1,116 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background:black;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-left: 4.5%;
+}
+.container1{
+    background: rgba(131, 130, 130, 0.849)linear-gradient(rgba(4, 9, 30, 0.521),rgba(4, 9, 30, 0.521));
+    width: 50%;
+}
+.container .logo img{
+    height:90px;
+    width: 100px;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+.container1 .content{
+    text-align: center;
+    margin-top: 6%;
+}
+.container1 h3,h2,p{
+    color: white;
+}
+.container1 h3{
+    font-family: -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.container1 h2{
+    font-family: -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    letter-spacing: 9px;
+    font-size: 35px;
+}
+.container1 p{
+    font-family: -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 20px;
+}
+button{
+    padding: 3%;
+    width: 160px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 3%;
+    letter-spacing: 3px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    transition: 0.5s ease-in-out;
+    width: 170px;
+    border: none;
+}
+.container2{
+    background:rgb(72, 165, 202) linear-gradient(rgba(104, 109, 131, 0.521),rgba(104, 109, 131, 0.521));
+    width: 50%;
+
+}
+.slider-frame{
+    overflow: hidden;
+    width: 600px;
+    height: 90vh;
+}   
+.slider-image div{
+    float: left;
+    width: 20%;
+}
+.slider-image img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+.slider-image{
+    position: relative;
+    width: 500%;
+    margin: 0%;
+    animation: animate 30s infinite;
+}
+@keyframes animate{
+    0%{left: 0%;}
+    10%{left: 0%;}
+    12%{left: -100%;}
+    22%{left: -100%;}
+    24%{left: -200%;}
+    34%{left: -200%;}
+    36%{left: -300%;}
+    46%{left: -300%;}
+    48%{left: -400%;}
+    58%{left: -400%;}
+    60%{left: -300%;}
+    70%{left: -300%;}
+    72%{left: -200%;}
+    82%{left: -200%;}
+    84%{left: -100%;}
+    94%{left: -100%;}
+    96%{left: 0%;}
+}
