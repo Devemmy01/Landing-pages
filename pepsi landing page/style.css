@@ -1,195 +1,133 @@
-body{
-    margin: 0px;
-    background: #2c5986 ;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 #main{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    min-height: 100vh;
+    background: #00233b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-box{
+    background: #fff;
+    width: 80%;
+    min-height: 80vh;
+    background: linear-gradient(to right bottom, rgba(225, 225, 225, 0.5), rgba(225, 225, 225, 0.1));
+    border-radius: 1rem;
+    backdrop-filter: blur(2rem);
+    z-index: 4;
+}
+.circle1, .circle2{
+    background: #fff;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
     position: absolute;
-    overflow: hidden;
-    background: #1e242a;
-    margin-left: 5%;
-    margin-top: 2.5%;
+    background: linear-gradient(to right bottom, rgba(225, 225, 225, 0.7), rgba(225, 225, 225, 0.4));
+    z-index: 2;
 }
-#box1{
-    width: 630px;
-    height: 470px;
-    background-image: url('pep1.png');
-    position: absolute;
-    bottom: -100%;
-    left: 25%;
-    animation: anim 2s forwards, anim2 3s forwards 3s ;
+.circle1{
+    top: 4%;
+    right: 2%;
 }
-#box1::after{
-    content: '';
-    position: absolute;
-    width: 650px;
-    height: 525px;
-    background-image: url('pe.png');
-    left: 50px;
-    z-index: 1;
+.circle2{
+    bottom: 4%;
+    left: 2%;
 }
-@keyframes anim{
-    from{
-        bottom: -100%;
-    }
-    to{
-        bottom: 0%;
-    }
+.main-box nav{
+    padding: 50px;
 }
-@keyframes anim2{
-    from{
-        left: 30%;
-        width: 530px;
-    }
-    to{
-        width: 0%;
-        left: 50%;
-    }
+.main-box nav ul{
+    display: flex;
+    justify-content: space-between;
 }
-#box2 {
-    width: auto;
-    height: auto;
-    font-family: -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
-    'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    font-size: 100px;
-    font-weight: 500;
-    line-height: 130px;
-    position: absolute;
-    top: 150px;
-    left: 100px;
-    overflow: hidden;
+.logo{
+    color: #000000;
+    font-size: 2.1rem;
+    font-weight: 800;
 }
-#text h4,p{
-    margin-top: -1%;
-    position: relative;
-    left: -100%;
-    animation: anim3 2s forwards 3s;
-}
-#text span{
-    color: #2c5986 ;
-}
-p{
-    font-size: 16px;
-    margin-top: -18%;
-    margin-left: 1%;
-    width: 700px;
-    letter-spacing: 2px;
-    line-height: 30px;
-    font-weight: 400;
-    color: rgb(192, 190, 190);
-    font-family: -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
-    'Open Sans', 'Helvetica Neue', sans-serif;
-    z-index: 1;
-    overflow: hidden;
-}
-
-@keyframes anim3{
-    from{
-        left: -100%;
-    }
-    to{
-        left: 0%;
-    }
-}
-
-button{
-    animation: anim5 2s forwards 3s;
-    position: relative;
-    left: -100%;
-    height: 50px;
-    width: 180px;
-    transform: translate(0%, -110%);
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 25px;
-    color: white;
-    font-size: 15px;
+.bx{
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 6px 6px;
+    border-radius: 0.5rem;
+    background: #000000;
     cursor: pointer;
 }
-button:hover{
-    background: black;
-    letter-spacing: 3px;
-    transition: 0.5s;
-}
-h1{
-    font-size: 200px;
-    letter-spacing: 77px;
-    margin-top: -2%;
-    margin-left: 12%;
-    font-family: -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
-    'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgba(251, 251, 251, 0.075);
-}
-#icon{
+.main-content{
     display: flex;
-    margin-top: -5%;
-    font-size: 25px;
-    
-    letter-spacing: 30px;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#icon a{
-    color: rgb(199, 195, 195);
+.main-text{
+    max-width: 500px;
 }
-
-@keyframes anim5{
-    from{
-        left: -100%;
-    }
-    to{
-        left: 1%;
-    }
+.main-text h1{
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
 }
-
-#box3{
-    overflow: hidden;
+.main-text h2{
+    letter-spacing: .2rem;
+    font-size: 2.5rem;
+    font-weight: 200;
 }
-#container{
-    width: 100%;
+.main-text p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 18px 0 40px;
+}
+.btn1{
+    padding: 20px 25px;
+    font-size: 20px;
+    background: #000000;
+    letter-spacing: .2rem;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.main-text::after{
+    content: '';
+    width: 5px;
+    height: 20%;
+    background:#00233b;
     position: absolute;
-    top: -100%;
-    animation: anim4 2s forwards 2.5s;
+    left: 2.4rem;
+    top: 13.1rem;
 }
-#logo{
-    float: left;
-    margin-left: 100px;
+img{
+    height: 400px;
+    width: 500px;
 }
-#logo img{
-    width: 150px;
-    margin-top: -8%;
+h5:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #00233b;
 }
-#menu{
-    font-family: -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
-    'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    color: white;
-    letter-spacing: 2px;
-    margin-right: 150px;
-    margin-top: 20px;
-    float: right;
+h5:nth-child(2) {
+    color: #00233b;
+    animation: animate 4s ease-in-out infinite;
 }
-#menu ul{
-    list-style: none;
-    display: flex;
-    margin-top: -11%;
+h5 {
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgba(236, 232, 232, 0.753);
+    margin-top: -9%;
+    text-align: center;
+    /* margin-left: 15%; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#menu ul li a{
-    display: inline-block;
-    margin-left: 100px;
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-}
-@keyframes anim4{
-    from{
-        top: -100%;
+@keyframes animate{
+    0%, 100% {
+        clip-path: polygon( 0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100% );
     }
-    to{
-        top: 0%;
+    50% {
+        clip-path: polygon( 0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100% );
     }
 }
